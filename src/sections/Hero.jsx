@@ -89,9 +89,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Hero Visual - Hidden on small mobile */}
+          {/* Hero Visual */}
           <div
-            className={`relative hidden sm:block transition-all duration-700 delay-200 ${
+            className={`relative transition-all duration-700 delay-200 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
@@ -114,28 +114,28 @@ export default function Hero() {
               </div>
 
               {/* Floating Stats Card */}
-              <div className="absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 bg-white rounded-xl sm:rounded-2xl shadow-xl p-3 sm:p-4">
-                <div className="flex items-center gap-2 sm:gap-3">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg sm:rounded-xl flex items-center justify-center">
-                    <Clock size={20} className="sm:size-6 text-green-600" />
+              <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 hidden sm:block">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                    <Clock size={24} className="text-green-600" />
                   </div>
                   <div>
-                    <p className="text-[10px] sm:text-xs text-text-secondary">Open Today</p>
-                    <p className="font-semibold text-text-primary text-sm sm:text-base">8AM - 10PM</p>
+                    <p className="text-xs text-text-secondary">Open Today</p>
+                    <p className="font-semibold text-text-primary">8:00 AM - 10:00 PM</p>
                   </div>
                 </div>
               </div>
 
               {/* Floating Badge */}
-              <div className="absolute -top-3 sm:-top-4 -right-3 sm:-right-4 bg-white rounded-xl sm:rounded-2xl shadow-xl p-3 sm:p-4">
+              <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl p-4 hidden sm:block">
                 <div className="flex items-center gap-2">
                   <div className="flex -space-x-2">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-primary rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs font-bold">BP</div>
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-primary-light rounded-full flex items-center justify-center text-white text-[10px] sm:text-xs font-bold">MP</div>
+                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs font-bold">BP</div>
+                    <div className="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center text-white text-xs font-bold">MP</div>
                   </div>
                   <div>
-                    <p className="text-[10px] sm:text-xs text-text-secondary">Certified</p>
-                    <p className="font-semibold text-text-primary text-xs sm:text-sm">McKenzie</p>
+                    <p className="text-xs text-text-secondary">Certified</p>
+                    <p className="font-semibold text-text-primary text-sm">McKenzie</p>
                   </div>
                 </div>
               </div>
