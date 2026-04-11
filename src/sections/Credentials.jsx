@@ -170,8 +170,8 @@ export default function Credentials() {
                   className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition-all"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <affil.icon size={24} className="text-secondary" />
+                    <div className="w-12 h-12 bg-primary-light/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <affil.icon size={24} className="text-primary" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-text-primary">{affil.role}</h4>

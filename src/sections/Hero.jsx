@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-        <div className="absolute top-20 right-20 w-72 h-72 bg-secondary/10 rounded-full blur-3xl" />
+        <div className="absolute top-20 right-20 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
@@ -130,7 +130,7 @@ export default function Hero() {
                 <div className="flex items-center gap-2">
                   <div className="flex -space-x-2">
                     <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs font-bold">BP</div>
-                    <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white text-xs font-bold">MP</div>
+                    <div className="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center text-white text-xs font-bold">MP</div>
                   </div>
                   <div>
                     <p className="text-xs text-text-secondary">Certified</p>

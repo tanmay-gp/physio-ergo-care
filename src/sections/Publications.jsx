@@ -127,16 +127,38 @@ export default function Publications() {
         </div>
 
         {/* Research Philosophy */}
-        <div className="mt-16 bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-white">
-          <div className="max-w-3xl mx-auto text-center">
-            <BookOpen className="mx-auto mb-4 text-accent" size={48} />
-            <h3 className="text-2xl font-bold mb-4">Research-Based Approach</h3>
-            <p className="text-white/90 leading-relaxed">
-              At Physio Ergo Care, we believe in evidence-based practice. Every treatment protocol 
-              we use is backed by scientific research and clinical evidence. Our commitment to 
-              research ensures that our patients receive the most effective and up-to-date care 
-              available in the field of physiotherapy.
-            </p>
+        <div className="mt-16 relative rounded-2xl overflow-hidden">
+          {/* Background with subtle pattern */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-primary-dark" />
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 left-0 w-full h-full" style={{
+              backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)`,
+              backgroundSize: '24px 24px'
+            }} />
+          </div>
+          
+          {/* Content */}
+          <div className="relative p-8 md:p-12">
+            <div className="max-w-3xl mx-auto text-center">
+              {/* Icon with circle background */}
+              <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 backdrop-blur-sm border border-white/20">
+                <BookOpen className="text-white" size={40} />
+              </div>
+              
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Research-Based Approach
+              </h3>
+              
+              <p className="text-white/80 leading-relaxed text-lg">
+                At Physio Ergo Care, we believe in evidence-based practice. Every treatment protocol 
+                we use is backed by scientific research and clinical evidence. Our commitment to 
+                research ensures that our patients receive the most effective and up-to-date care 
+                available in the field of physiotherapy.
+              </p>
+              
+              {/* Accent line */}
+              <div className="w-24 h-1 bg-accent rounded-full mx-auto mt-6" />
+            </div>
           </div>
         </div>
       </div>

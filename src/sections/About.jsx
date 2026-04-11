@@ -63,7 +63,7 @@ export default function About() {
               contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            <div className="bg-gradient-to-br from-primary to-secondary rounded-3xl p-1 shadow-2xl">
+            <div className="bg-gradient-to-br from-primary to-primary-light rounded-3xl p-1 shadow-2xl">
               <div className="bg-white rounded-3xl overflow-hidden">
                 {/* Dr. Sagar Mahajan Photo */}
                 <div className="aspect-[4/3] relative">
@@ -161,7 +161,7 @@ export default function About() {
           <h3 className="text-2xl font-bold text-text-primary mb-8 text-center">Professional Journey</h3>
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-accent" />
+            <div className="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary-light to-accent" />
 
             {/* Timeline Items */}
             <div className="space-y-8">
