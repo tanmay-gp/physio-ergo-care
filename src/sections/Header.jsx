@@ -64,8 +64,12 @@ export default function Header() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-                PE
+              <div className="w-10 h-10 rounded-lg overflow-hidden group-hover:scale-105 transition-transform bg-white">
+                <img
+                  src="/images/logo.jpg"
+                  alt="Physio Ergo Care Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="hidden sm:block">
                 <h1 className="font-display font-bold text-lg text-text-primary leading-tight">

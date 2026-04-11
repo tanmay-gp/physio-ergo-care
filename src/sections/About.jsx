@@ -65,15 +65,14 @@ export default function About() {
           >
             <div className="bg-gradient-to-br from-primary to-secondary rounded-3xl p-1 shadow-2xl">
               <div className="bg-white rounded-3xl overflow-hidden">
-                {/* Placeholder for doctor image */}
-                <div className="aspect-[4/3] bg-gradient-to-br from-surface to-white flex items-center justify-center relative">
-                  <div className="text-center p-8">
-                    <div className="w-28 h-28 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-4xl font-bold text-primary">SM</span>
-                    </div>
-                    <p className="text-text-secondary">Dr. Sagar Mahajan</p>
-                    <p className="text-primary font-semibold">Consultant Physiotherapist</p>
-                  </div>
+                {/* Dr. Sagar Mahajan Photo */}
+                <div className="aspect-[4/3] relative">
+                  <img
+                    src="/images/profile-photo.jpg"
+                    alt="Dr. Sagar Mahajan - Consultant Physiotherapist"
+                    className="w-full h-full object-cover object-top"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="p-6 bg-surface">
                   <div className="grid grid-cols-2 gap-4 text-center">

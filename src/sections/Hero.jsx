@@ -98,18 +98,16 @@ export default function Hero() {
               {/* Main Image Container */}
               <div className="relative bg-gradient-to-br from-primary to-secondary rounded-3xl p-1 shadow-2xl">
                 <div className="bg-white rounded-3xl overflow-hidden">
-                  {/* Placeholder for actual clinic image */}
-                  <div className="aspect-[4/3] bg-gradient-to-br from-surface to-white flex items-center justify-center relative">
-                    <div className="text-center p-8">
-                      <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Stethoscope size={48} className="text-primary" />
-                      </div>
-                      <p className="text-text-secondary text-lg">Physio Ergo Care Clinic</p>
-                      <p className="text-primary font-semibold">Nashik</p>
-                    </div>
-                    {/* Decorative Elements */}
-                    <div className="absolute top-4 right-4 w-16 h-16 bg-accent/20 rounded-full blur-xl" />
-                    <div className="absolute bottom-4 left-4 w-20 h-20 bg-secondary/20 rounded-full blur-xl" />
+                  {/* Hero Image - Running/Sports */}
+                  <div className="aspect-[4/3] relative">
+                    <img
+                      src="/images/hero-running.jpg"
+                      alt="Active lifestyle and sports rehabilitation at Physio Ergo Care"
+                      className="w-full h-full object-cover"
+                      loading="eager"
+                    />
+                    {/* Overlay gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
                   </div>
                 </div>
               </div>

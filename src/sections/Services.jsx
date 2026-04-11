@@ -181,6 +181,27 @@ export default function Services() {
           </p>
         </div>
 
+        {/* Featured Image */}
+        <div className="mb-16">
+          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <img
+              src="/images/spine-consultation.jpg"
+              alt="Doctor explaining spine anatomy to patient"
+              className="w-full h-64 md:h-80 object-cover object-center"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent flex items-center">
+              <div className="p-8 md:p-12 text-white max-w-lg">
+                <h3 className="text-2xl md:text-3xl font-bold mb-3">Expert Spine Care</h3>
+                <p className="text-white/90">
+                  Understanding your condition is the first step to recovery. We take time to 
+                  explain your diagnosis and treatment options.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (
