@@ -4,42 +4,36 @@ import { Star, Quote } from 'lucide-react';
 const testimonials = [
   {
     name: 'Hemant Malik',
-    role: 'Local Guide · 36 reviews',
     rating: 5,
     text: 'Dr.Mahajan is the best Physiotherapist in Nashik city. He personally pays attention & takes care of his patients. My chronic back pain got cured in just 2 sessions.',
     highlight: 'Chronic back pain cured in 2 sessions',
   },
   {
     name: 'Prasad Verulkar',
-    role: '6 reviews',
     rating: 5,
     text: 'Dr. Sagar Mahajan is a profound physiotherapist I must say. I underwent treatment for L4-L5 slip disc. My lower back pain reduced significantly. Unlike other doctors, he explains medical conditions very well.',
     highlight: 'L4-L5 slip disc treatment',
   },
   {
     name: 'Rushali Bagul',
-    role: '3 reviews',
     rating: 5,
     text: 'Dr Mahajan is an amazing physiotherapist. He is a humble and kind person. Thank you so much for the treatment you gave me for my ankle pain. I was so scared for the treatment but you treated me so well.',
     highlight: 'Ankle pain treatment',
   },
   {
     name: 'Bhimreddi Mangalur',
-    role: '4 reviews',
     rating: 5,
     text: 'I was suffering from neck pain. My pain got relieved in just 5 days without medicine. Now following ergonomic advice given by the doctor. Excellent doctor and nice physiotherapy clinic too.',
     highlight: 'Neck pain relieved in 5 days',
   },
   {
     name: 'Sanika Ahire',
-    role: '3 reviews',
     rating: 5,
     text: 'I was suffering from slip disc problem for several months. But when I had taken treatment from Dr Sagar sir, then I got immediate relief from pain. I would like to thank you sir.',
     highlight: 'Slip disc - immediate relief',
   },
   {
     name: 'Ekta Korde',
-    role: '4 reviews',
     rating: 5,
     text: 'Dr. Sagar Mahajan is an excellent physiotherapist. His treatment is the best treatment. Makes patients fit and fine within few days. Proper advice, exercise and care is taken at Physio Ergo Care.',
     highlight: 'Fit and fine within few days',
@@ -139,7 +133,6 @@ export default function Testimonials() {
                 </div>
                 <div>
                   <p className="font-semibold text-text-primary text-sm">{testimonial.name}</p>
-                  <p className="text-text-secondary text-xs">{testimonial.role}</p>
                 </div>
               </div>
             </div>
