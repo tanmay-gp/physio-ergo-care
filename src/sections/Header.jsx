@@ -6,8 +6,8 @@ const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Credentials', href: '#credentials' },
   { name: 'Publications', href: '#publications' },
-  { name: 'Our Clinic', href: '#clinic' },
   { name: 'Contact', href: '#contact' },
+  { name: 'Our Clinic', href: '#clinic' },
 ];
 
 export default function Header() {

@@ -18,8 +18,8 @@ function App() {
         <Credentials />
         <About />
         <Publications />
-        <ClinicGallery />
         <Contact />
+        <ClinicGallery />
       </main>
       <Footer />
     </div>
