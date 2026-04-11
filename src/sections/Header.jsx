@@ -108,7 +108,7 @@ export default function Header() {
                   e.preventDefault();
                   scrollToSection('#contact');
                 }}
-                className="flex items-center gap-2 bg-accent hover:bg-accent/90 text-text-primary px-4 py-2 rounded-lg font-semibold transition-all hover:shadow-lg hover:scale-105"
+                className="flex items-center gap-2 bg-accent hover:bg-accent-light text-white px-4 py-2 rounded-lg font-semibold transition-all hover:shadow-lg hover:scale-105"
               >
                 <Calendar size={18} />
                 <span className="hidden sm:inline">Book Appointment</span>
