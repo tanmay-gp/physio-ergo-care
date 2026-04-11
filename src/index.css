@@ -12,9 +12,8 @@
   --color-text-primary: #1A1A2E;
   --color-text-secondary: #4A5568;
   
-  /* Google Sans Font */
-  --font-family-sans: 'Google Sans', 'Product Sans', 'Roboto', system-ui, sans-serif;
-  --font-family-display: 'Google Sans', 'Product Sans', 'Roboto', system-ui, sans-serif;
+  /* Google Sans Font - Override Tailwind's default */
+  --font-sans: 'Google Sans', 'Product Sans', 'Roboto', system-ui, sans-serif;
 }
 
 /* Custom utilities */
@@ -32,6 +31,11 @@
     background: rgba(30, 74, 111, 0.95);
     backdrop-filter: blur(10px);
   }
+}
+
+/* Apply Google Sans globally */
+html, body {
+  font-family: 'Google Sans', 'Product Sans', 'Roboto', system-ui, sans-serif;
 }
 
 /* Smooth scroll behavior */
