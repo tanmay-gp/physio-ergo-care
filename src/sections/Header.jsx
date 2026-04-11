@@ -8,7 +8,6 @@ const navLinks = [
   { name: 'Credentials', href: '#credentials' },
   { name: 'Publications', href: '#publications' },
   { name: 'Contact', href: '#contact' },
-  { name: 'Our Clinic', href: '#clinic' },
 ];
 
 export default function Header() {
@@ -34,8 +33,8 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Bar - Contact Info */}
-      <div className="bg-primary text-white py-2 px-4 text-sm">
+      {/* Top Bar - Contact Info - HIDDEN for now */}
+      <div className="bg-primary text-white py-2 px-4 text-sm hidden">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-between items-center gap-2">
           <div className="flex items-center gap-4">
             <a href="tel:+919890277759" className="flex items-center gap-1.5 hover:text-accent transition-colors">

@@ -88,10 +88,11 @@ const services = [
 function ServiceCard({ service, isExpanded, onToggle }) {
   const [ref, isVisible] = useScrollAnimation(0.1);
 
+  {/* DARK_THEME: card bg-primary-light/30, LIGHT_THEME: card bg-white */}
   return (
     <div
       ref={ref}
-      className={`bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl group ${
+      className={`bg-primary-light/30 rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-black/20 group ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       }`}
     >
@@ -100,9 +101,12 @@ function ServiceCard({ service, isExpanded, onToggle }) {
         <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform`}>
           <service.icon size={28} />
         </div>
-        <h3 className="text-xl font-bold text-text-primary mb-1">{service.title}</h3>
-        <p className="text-sm text-primary font-medium mb-3">{service.subtitle}</p>
-        <p className="text-text-secondary text-sm leading-relaxed">
+        {/* DARK_THEME: text-white, LIGHT_THEME: text-text-primary */}
+        <h3 className="text-xl font-bold text-white mb-1">{service.title}</h3>
+        {/* DARK_THEME: text-white/60, LIGHT_THEME: text-primary */}
+        <p className="text-sm text-white/60 font-medium mb-3">{service.subtitle}</p>
+        {/* DARK_THEME: text-white/70, LIGHT_THEME: text-text-secondary */}
+        <p className="text-white/70 text-sm leading-relaxed">
           {isExpanded ? service.fullDesc : service.shortDesc}
         </p>
       </div>
@@ -114,14 +118,16 @@ function ServiceCard({ service, isExpanded, onToggle }) {
         }`}
       >
         <div className="px-6 pb-4">
-          <p className="text-xs font-semibold text-text-secondary uppercase tracking-wide mb-2">
+          {/* DARK_THEME: text-white/60, LIGHT_THEME: text-text-secondary */}
+          <p className="text-xs font-semibold text-white/60 uppercase tracking-wide mb-2">
             Conditions Treated
           </p>
           <div className="flex flex-wrap gap-2">
             {service.conditions.map((condition) => (
+              /* DARK_THEME: bg-primary/50 text-white/80, LIGHT_THEME: bg-surface text-text-secondary */
               <span
                 key={condition}
-                className="text-xs bg-surface text-text-secondary px-3 py-1 rounded-full"
+                className="text-xs bg-primary/50 text-white/80 px-3 py-1 rounded-full"
               >
                 {condition}
               </span>
@@ -130,10 +136,10 @@ function ServiceCard({ service, isExpanded, onToggle }) {
         </div>
       </div>
 
-      {/* Toggle Button */}
+      {/* Toggle Button - DARK_THEME: bg-primary/50 text-white, LIGHT_THEME: bg-surface text-primary */}
       <button
         onClick={onToggle}
-        className="w-full py-3 px-6 bg-surface hover:bg-surface/80 flex items-center justify-center gap-2 text-primary font-medium text-sm transition-colors"
+        className="w-full py-3 px-6 bg-primary/50 hover:bg-primary/70 flex items-center justify-center gap-2 text-white font-medium text-sm transition-colors"
       >
         {isExpanded ? (
           <>
@@ -159,8 +165,9 @@ export default function Services() {
     setExpandedId(expandedId === id ? null : id);
   };
 
+  {/* DARK_THEME: section bg-primary-dark, LIGHT_THEME: section bg-white */}
   return (
-    <section id="services" className="py-20 lg:py-28 bg-white">
+    <section id="services" className="py-20 lg:py-28 bg-primary-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div
@@ -169,13 +176,16 @@ export default function Services() {
             headerVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <span className="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+          {/* DARK_THEME: text-white/80, LIGHT_THEME: text-primary */}
+          <span className="inline-block text-white/80 font-semibold text-sm uppercase tracking-wider mb-3">
             Our Services
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary mb-4">
+          {/* DARK_THEME: text-white, LIGHT_THEME: text-text-primary */}
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Comprehensive Physiotherapy Services
           </h2>
-          <p className="text-text-secondary text-lg">
+          {/* DARK_THEME: text-white/70, LIGHT_THEME: text-text-secondary */}
+          <p className="text-white/70 text-lg">
             From spine rehabilitation to sports injury recovery, we offer evidence-based 
             treatment for a wide range of musculoskeletal conditions.
           </p>
@@ -203,7 +213,7 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
           {services.map((service) => (
             <ServiceCard
               key={service.id}
@@ -216,7 +226,8 @@ export default function Services() {
 
         {/* Bottom CTA */}
         <div className="mt-12 text-center">
-          <p className="text-text-secondary mb-4">
+          {/* DARK_THEME: text-white/70, LIGHT_THEME: text-text-secondary */}
+          <p className="text-white/70 mb-4">
             Not sure which service you need? Contact us for a consultation.
           </p>
           <a
