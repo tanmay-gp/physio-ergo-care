@@ -97,20 +97,15 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Main Image Container */}
-              <div className="relative bg-gradient-to-br from-primary to-primary-light rounded-2xl sm:rounded-3xl p-1 shadow-2xl">
-                <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden">
-                  {/* Hero Image - Running/Sports */}
-                  <div className="aspect-[4/3] relative">
-                    <img
-                      src="/images/hero-running.jpg"
-                      alt="Active lifestyle and sports rehabilitation at Physio Ergo Care"
-                      className="w-full h-full object-cover"
-                      loading="eager"
-                    />
-                    {/* Overlay gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
-                  </div>
-                </div>
+              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
+                <img
+                  src="/images/hero-physiotherapy.jpg"
+                  alt="Physiotherapy treatment at Physio Ergo Care"
+                  className="w-full aspect-[4/3] object-cover"
+                  loading="eager"
+                />
+                {/* Subtle overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent" />
               </div>
 
               {/* Floating Stats Card */}
