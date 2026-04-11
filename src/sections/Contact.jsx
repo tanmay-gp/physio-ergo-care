@@ -97,21 +97,22 @@ export default function Contact() {
           <div className="space-y-6">
             {/* Map */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-              <div className="aspect-video bg-surface relative">
-                {/* Google Maps Embed */}
+              {/* Map Container - explicit height for mobile */}
+              <div className="h-64 sm:h-72 md:h-80 w-full">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120073.29268996916!2d73.67781241796875!3d19.9974533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddd290b09914b3%3A0xcb6c6e4e8a0d1d4a!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
-                  style={{ border: 0, minHeight: '300px' }}
+                  style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Physio Ergo Care Location"
-                  className="absolute inset-0"
+                  className="w-full h-full"
                 />
               </div>
-              <div className="p-4 flex items-center justify-between">
+              {/* Card Footer - separate from map */}
+              <div className="p-4 bg-white flex items-center justify-between border-t border-gray-100">
                 <div>
                   <h3 className="font-semibold text-text-primary">Physio Ergo Care</h3>
                   <p className="text-sm text-text-secondary">Nashik, Maharashtra</p>
@@ -120,7 +121,7 @@ export default function Contact() {
                   href="https://maps.app.goo.gl/ok3G4ymhjNdSRvYGA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg text-sm font-medium transition-all"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg text-sm font-medium transition-all flex-shrink-0"
                 >
                   <Navigation size={16} />
                   <span>Get Directions</span>
