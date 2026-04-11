@@ -33,7 +33,7 @@ export default function Hero() {
             }`}
           >
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+            <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium">
               <Award size={16} />
               <span>Certified McKenzie Practitioner</span>
             </div>
@@ -55,11 +55,11 @@ export default function Hero() {
             {/* Quick Info */}
             <div className="flex flex-wrap gap-4 text-sm">
               <div className="flex items-center gap-2 text-text-secondary">
-                <Phone size={16} className="text-primary" />
+                <Phone size={16} className="text-accent" />
                 <span>+91 98902 77759</span>
               </div>
               <div className="flex items-center gap-2 text-text-secondary">
-                <MapPin size={16} className="text-primary" />
+                <MapPin size={16} className="text-accent" />
                 <span>Nashik, Maharashtra</span>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Main Image Container */}
-              <div className="relative bg-gradient-to-br from-primary to-secondary rounded-3xl p-1 shadow-2xl">
+              <div className="relative bg-gradient-to-br from-primary to-primary-light rounded-3xl p-1 shadow-2xl">
                 <div className="bg-white rounded-3xl overflow-hidden">
                   {/* Hero Image - Running/Sports */}
                   <div className="aspect-[4/3] relative">

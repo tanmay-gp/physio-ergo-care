@@ -63,10 +63,10 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-lg overflow-hidden group-hover:scale-105 transition-transform bg-white">
+            <a href="#" className="flex items-center gap-3 group">
+              <div className="w-12 h-12 rounded-lg overflow-hidden group-hover:scale-105 transition-transform bg-white">
                 <img
-                  src="/images/logo.jpg"
+                  src="/images/physio-ergo-care.png"
                   alt="Physio Ergo Care Logo"
                   className="w-full h-full object-contain"
                 />

@@ -1,16 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0D7377;
-  --color-primary-dark: #095457;
-  --color-secondary: #14919B;
-  --color-accent: #32E0C4;
-  --color-surface: #F8FAFA;
+  /* Logo-inspired Color Palette */
+  --color-primary: #1E4A6F;
+  --color-primary-dark: #153652;
+  --color-primary-light: #2C5A7A;
+  --color-accent: #D64545;
+  --color-accent-light: #E85A5A;
+  --color-accent-dark: #B83A3A;
+  --color-surface: #F5F7FA;
   --color-text-primary: #1A1A2E;
   --color-text-secondary: #4A5568;
   
-  --font-family-sans: 'Inter', system-ui, sans-serif;
-  --font-family-display: 'Poppins', system-ui, sans-serif;
+  /* Google Sans equivalent - Using Roboto (Google's primary font) */
+  --font-family-sans: 'Roboto', 'Segoe UI', system-ui, sans-serif;
+  --font-family-display: 'Roboto', 'Segoe UI', system-ui, sans-serif;
 }
 
 /* Custom utilities */
@@ -20,12 +24,12 @@
   }
   
   .glass {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
   }
   
   .glass-dark {
-    background: rgba(13, 115, 119, 0.95);
+    background: rgba(30, 74, 111, 0.95);
     backdrop-filter: blur(10px);
   }
 }
@@ -35,7 +39,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar - logo colors */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -45,17 +49,17 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0D7377;
+  background: #1E4A6F;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #095457;
+  background: #153652;
 }
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  outline: 2px solid #0D7377;
+  outline: 2px solid #1E4A6F;
   outline-offset: 2px;
 }
 
@@ -68,15 +72,6 @@ html {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes countUp {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 

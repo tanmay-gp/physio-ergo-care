@@ -45,9 +45,9 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-xl overflow-hidden bg-white">
+              <div className="w-14 h-14 rounded-xl overflow-hidden bg-white">
                 <img
-                  src="/images/logo.jpg"
+                  src="/images/physio-ergo-care.png"
                   alt="Physio Ergo Care Logo"
                   className="w-full h-full object-contain"
                 />

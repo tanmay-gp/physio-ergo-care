@@ -307,7 +307,7 @@ export default function Contact() {
         </div>
 
         {/* Emergency CTA */}
-        <div className="mt-12 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl p-6 text-white text-center">
+        <div className="mt-12 bg-gradient-to-r from-accent to-accent-dark rounded-2xl p-6 text-white text-center">
           <p className="font-semibold text-lg mb-2">Need Immediate Assistance?</p>
           <p className="text-white/90 mb-4">Call us directly for urgent appointments or inquiries</p>
           <a
