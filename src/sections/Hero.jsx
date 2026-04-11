@@ -76,11 +76,9 @@ export default function Hero() {
                 <span>Book Appointment</span>
               </a>
               <a
-                href="#contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
-                }}
+                href="https://maps.app.goo.gl/ok3G4ymhjNdSRvYGA"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-white border-2 border-primary text-primary hover:bg-primary/5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all"
               >
                 <MapPin size={18} className="sm:size-5" />
