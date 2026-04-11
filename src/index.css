@@ -12,9 +12,9 @@
   --color-text-primary: #1A1A2E;
   --color-text-secondary: #4A5568;
   
-  /* Google Sans equivalent - Using Roboto (Google's primary font) */
-  --font-family-sans: 'Roboto', 'Segoe UI', system-ui, sans-serif;
-  --font-family-display: 'Roboto', 'Segoe UI', system-ui, sans-serif;
+  /* Google Sans Font */
+  --font-family-sans: 'Google Sans', 'Product Sans', 'Roboto', system-ui, sans-serif;
+  --font-family-display: 'Google Sans', 'Product Sans', 'Roboto', system-ui, sans-serif;
 }
 
 /* Custom utilities */
