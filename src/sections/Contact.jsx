@@ -30,8 +30,8 @@ const contactInfo = [
     icon: MapPin,
     label: 'Location',
     value: 'Nashik, Maharashtra',
-    href: 'https://maps.google.com/?q=Nashik,Maharashtra',
-    description: 'Visit our clinic',
+    href: 'https://maps.app.goo.gl/ok3G4ymhjNdSRvYGA',
+    description: 'View exact location on Google Maps',
     external: true,
   },
 ];
@@ -117,7 +117,7 @@ export default function Contact() {
                   <p className="text-sm text-text-secondary">Nashik, Maharashtra</p>
                 </div>
                 <a
-                  href="https://maps.google.com/?q=Nashik,Maharashtra"
+                  href="https://maps.app.goo.gl/ok3G4ymhjNdSRvYGA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-lg text-sm font-medium transition-all"
