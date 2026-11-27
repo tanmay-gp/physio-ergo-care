@@ -68,7 +68,7 @@ export default function About() {
                 {/* Dr. Sagar Mahajan Photo */}
                 <div className="aspect-[4/3] relative">
                   <img
-                    src="/images/profile-photo.jpg"
+                    src="/images/dr-sagar-mahajan.jpg"
                     alt="Dr. Sagar Mahajan - Consultant Physiotherapist"
                     className="w-full h-full object-cover object-top"
                     loading="lazy"
@@ -81,7 +81,7 @@ export default function About() {
                       <p className="text-sm text-text-secondary">Years Practice</p>
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-primary">5000+</p>
+                      <p className="text-2xl font-bold text-primary">22,000+</p>
                       <p className="text-sm text-text-secondary">Patients Treated</p>
                     </div>
                   </div>

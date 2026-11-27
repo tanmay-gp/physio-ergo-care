@@ -75,7 +75,7 @@ function StatCard({ value, suffix, label, delay }) {
       style={{ transitionDelay: `${delay}ms` }}
     >
       <p className="text-4xl sm:text-5xl font-bold text-primary mb-2">
-        {count}{suffix}
+        {count.toLocaleString('en-IN')}{suffix}
       </p>
       <p className="text-text-secondary font-medium">{label}</p>
     </div>
@@ -113,7 +113,7 @@ export default function Credentials() {
         {/* Stats Row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           <StatCard value={15} suffix="+" label="Years Experience" delay={0} />
-          <StatCard value={5000} suffix="+" label="Patients Treated" delay={100} />
+          <StatCard value={22000} suffix="+" label="Patients Treated" delay={100} />
           <StatCard value={4} suffix="" label="Research Publications" delay={200} />
           <StatCard value={3} suffix="" label="Hospital Affiliations" delay={300} />
         </div>
