@@ -3,7 +3,6 @@ import { Phone, MapPin, Menu, X, Calendar } from 'lucide-react';
 
 const navLinks = [
   { name: 'Services', href: '#services' },
-  { name: 'Reviews', href: '#testimonials' },
   { name: 'About', href: '#about' },
   { name: 'Credentials', href: '#credentials' },
   { name: 'Publications', href: '#publications' },

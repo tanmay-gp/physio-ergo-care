@@ -3,7 +3,7 @@ import { Phone, MapPin, Clock, Award, Users, Stethoscope, ArrowRight } from 'luc
 
 const stats = [
   { icon: Clock, value: '15+', label: 'Years Experience' },
-  { icon: Users, value: '5000+', label: 'Patients Treated' },
+  { icon: Users, value: '22,000+', label: 'Patients Treated' },
   { icon: Award, value: '4', label: 'Research Publications' },
   { icon: Stethoscope, value: '3', label: 'Hospital Affiliations' },
 ];
